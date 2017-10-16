@@ -1,0 +1,4 @@
+#! /bin/sh
+
+rm bible.sqlite
+./mysql2sqlite.sh  -h192.168.10.30 -u root -p bible | sqlite3 bible.sqlite
